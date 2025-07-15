@@ -1,0 +1,84 @@
+.card-profissional {
+  width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.card-profissional:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
+}
+
+.card-profissional__foto {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-profissional__info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.card-profissional__nome {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.card-profissional__localizacao {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card-profissional__servicos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.servico-badge {
+  background-color: #00b894;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.card-profissional__nota {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.estrelas {
+  color: #ffb400;
+  font-size: 1.1rem;
+  margin-right: 6px;
+}
+
+.ver-mais-btn {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 8px 16px;
+  background-color: #00b894;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.ver-mais-btn:hover {
+  background-color: #019875;
+}
