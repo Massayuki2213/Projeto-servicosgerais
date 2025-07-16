@@ -35,7 +35,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer__bottom">
-        <p>&copy; 2023 ServiFácil. Todos os direitos reservados.</p>
+        <p>&copy; 2025 ServiFácil. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

@@ -14,6 +14,7 @@ export default function Header() {
         </a>
         <a href="/sobre">Sobre</a>
         <a href="/contato">Contato</a>
+        <a href="/perfil">Perfil</a>
       </nav>
 
       <div className="header__auth">

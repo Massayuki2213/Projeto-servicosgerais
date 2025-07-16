@@ -40,7 +40,7 @@ export default function Home() {
   });
 
   return (
-    <div className="home-container">
+    <><div className="home-container">
       {/* BARRA DE PESQUISA */}
       <div className="busca-container">
         <input
@@ -48,8 +48,7 @@ export default function Home() {
           placeholder="Buscar por nome, serviço ou localização"
           value={busca}
           onChange={(e) => setBusca(e.target.value)}
-          className="input-busca"
-        />
+          className="input-busca" />
         <button className="botao-busca">Pesquisar</button>
       </div>
 
@@ -66,13 +65,31 @@ export default function Home() {
               nome={prof.nome}
               localizacao={prof.localizacao}
               servicos={prof.servicos}
-              nota={prof.nota}
-            />
+              nota={prof.nota} />
           ))
         ) : (
           <p>Nenhum profissional encontrado.</p>
         )}
       </div>
-    </div>
+    </div><nav className="paginacao" aria-label="Navegação de páginas">
+  <ul className="pagination">
+    <li className="page-item">
+      <a className="page-link" href="#" aria-label="Anterior">
+        &laquo;
+      </a>
+    </li>
+    {[1, 2, 3].map((num) => (
+      <li className="page-item" key={num}>
+        <a className="page-link" href="#">{num}</a>
+      </li>
+    ))}
+    <li className="page-item">
+      <a className="page-link" href="#" aria-label="Próxima">
+        &raquo;
+      </a>
+    </li>
+  </ul>
+</nav>
+</>
   );
 }
